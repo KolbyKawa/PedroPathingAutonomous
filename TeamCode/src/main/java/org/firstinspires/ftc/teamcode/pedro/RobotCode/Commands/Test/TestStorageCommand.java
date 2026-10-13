@@ -13,17 +13,17 @@ public class TestStorageCommand {
         this.gamepad = gamepad;
     }
 
-    public void operate(Gamepad gamepad){
+    public void operate(Gamepad gamepad, double spindexerPower, double kickerPower){
         if(gamepad.left_bumper){
-            storageSubsystem.setStoragePower(.25);
-            storageSubsystem.setSpindexerPower(1);
+            storageSubsystem.setStoragePower(kickerPower);
         }
-        else if(gamepad.right_bumper){
-            storageSubsystem.setStoragePower(.65);
-            storageSubsystem.setSpindexerPower(1);
-        }
-        else{
+        else {
             storageSubsystem.setStoragePower(0);
+        }
+        if (gamepad.right_bumper) {
+            storageSubsystem.setSpindexerPower(spindexerPower);
+        }
+        else {
             storageSubsystem.setSpindexerPower(0);
         }
     }

@@ -57,7 +57,7 @@ public class TestAutoAlign {
 //
 //        }
 
-        targetRotation = Localization.getTargetRotation(72, 72, pinpoint);
+        targetRotation = Localization.getTargetRotation(72, 72);
 
         error = Localization.getAngleError(targetRotation, pinpoint.getHeading(AngleUnit.DEGREES));
 
