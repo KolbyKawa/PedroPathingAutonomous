@@ -13,7 +13,6 @@ import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.MecanumDriveSub
 
 
 @TeleOp(name="TEST ONLY")
-
 public class TestTeleOp extends OpMode {
 
     GoBildaPinpointDriver pinpoint;
@@ -26,9 +25,10 @@ public class TestTeleOp extends OpMode {
 //    private IntakeCommand intakeCommand;
 //    private StorageCommand storageCommand;
 
-//    private IntakeSubsystem intakeSubsystem;
+    //    private IntakeSubsystem intakeSubsystem;
 //    private StorageSubsystem storageSubsystem;
-
+    public static double alignkP = .005;
+    public static double alignkFF = .05;
 
 
     private TestAutoAlign autoAlignCommand;
@@ -67,7 +67,10 @@ public class TestTeleOp extends OpMode {
 //        intakeCommand.operate(gamepad1);
         mecanumDriveSubsystem.operate(gamepad1, telemetry, Constants.PinpointConstants.redAlliance);
 //        storageCommand.operate(gamepad1);
-        autoAlignCommand.operate(Constants.PinpointConstants.redAlliance, pinpoint);
+        autoAlignCommand.operate(Constants.PinpointConstants.redAlliance, pinpoint, alignkP, alignkFF);
+        telemetry.addData("Align kP: ", alignkP);
+        telemetry.addData("Align kFF: ", alignkFF);
+        telemetry.update();
     }
     public void stop(){
 //        intakeCommand.shutdown();
