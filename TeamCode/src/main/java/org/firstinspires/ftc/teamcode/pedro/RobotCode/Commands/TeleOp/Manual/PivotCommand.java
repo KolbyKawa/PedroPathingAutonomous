@@ -2,7 +2,8 @@ package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Manual;
 
 import com.qualcomm.robotcore.hardware.Gamepad;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.PivotSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.PivotSubsystem;
+
 
 public class PivotCommand {
     private PivotSubsystem pivotSubsystem;

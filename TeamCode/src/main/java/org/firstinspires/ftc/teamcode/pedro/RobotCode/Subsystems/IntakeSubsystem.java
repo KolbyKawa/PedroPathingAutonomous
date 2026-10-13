@@ -4,7 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Constants;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Constants;
+
 
 public class IntakeSubsystem {
     DcMotorEx intakeMotor; //only one motor right now, rename to motor one and motor two for second one.

@@ -2,9 +2,10 @@ package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated
 
 import com.qualcomm.robotcore.hardware.Gamepad;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.IntakeSubsystem;
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.PivotSubsystem;
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.StorageSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.IntakeSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.PivotSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.StorageSubsystem;
+
 
 public class AutoFlowerIntake {
     private IntakeSubsystem intakeSubsystem;

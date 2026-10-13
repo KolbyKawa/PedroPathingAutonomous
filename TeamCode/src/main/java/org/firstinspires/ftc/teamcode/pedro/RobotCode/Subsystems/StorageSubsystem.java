@@ -4,7 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Constants;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Constants;
+
 
 public class StorageSubsystem {
     CRServo spindexer; //motor for spinning the actual spindexer

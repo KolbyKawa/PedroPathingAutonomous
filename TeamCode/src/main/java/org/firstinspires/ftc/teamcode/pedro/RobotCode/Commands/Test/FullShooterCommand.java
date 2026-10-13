@@ -2,7 +2,8 @@ package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.Test;
 
 import com.qualcomm.robotcore.hardware.Gamepad;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.ShooterSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.ShooterSubsystem;
+
 
 public class FullShooterCommand {
     private ShooterSubsystem shooterSubsystem;

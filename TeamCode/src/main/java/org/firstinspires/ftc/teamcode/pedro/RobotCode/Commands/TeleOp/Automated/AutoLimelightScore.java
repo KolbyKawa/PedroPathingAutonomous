@@ -3,10 +3,11 @@ package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated
 import com.qualcomm.hardware.limelightvision.LLResult;
 import com.qualcomm.hardware.limelightvision.Limelight3A;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Constants;
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.MecanumDriveSubsystem;
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.ShooterSubsystem;
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.StorageSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Constants;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.MecanumDriveSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.ShooterSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.StorageSubsystem;
+
 
 public class AutoLimelightScore {
     private ShooterSubsystem shooterSubsystem;

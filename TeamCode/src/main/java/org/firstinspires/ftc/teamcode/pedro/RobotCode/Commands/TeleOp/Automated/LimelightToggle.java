@@ -2,7 +2,8 @@ package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated
 
 import com.qualcomm.robotcore.hardware.Gamepad;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.ShooterSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.ShooterSubsystem;
+
 
 public class LimelightToggle {
     private ShooterSubsystem shooterSubsystem;

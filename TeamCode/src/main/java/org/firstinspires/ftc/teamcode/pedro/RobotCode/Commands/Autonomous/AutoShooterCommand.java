@@ -2,8 +2,9 @@ package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.Autonomous;
 
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.ShooterSubsystem;
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.StorageSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.ShooterSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.StorageSubsystem;
+
 
 public class AutoShooterCommand {
     ShooterSubsystem shooterSubsystem;

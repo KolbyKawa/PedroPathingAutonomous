@@ -2,7 +2,8 @@ package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.Test;
 
 import com.qualcomm.robotcore.hardware.Gamepad;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.IntakeSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.IntakeSubsystem;
+
 
 public class TestIntakeCommand {
     private IntakeSubsystem intakeSubsystem;

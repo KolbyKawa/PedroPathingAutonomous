@@ -7,9 +7,20 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated.AutoFlowerIntake;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated.AutoIntake;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated.AutoScore;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated.PanicResetRotation;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated.ToggleFlywheels;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Manual.BrakeCommand;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Manual.ManualIntakeCommand;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Manual.ManualKickerCommand;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Manual.ManualShootCommand;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Manual.PivotCommand;
 import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.IntakeSubsystem;
 import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.MecanumDriveSubsystem;
 import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.PivotSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.ShooterSubsystem;
 import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.StorageSubsystem;
 
 

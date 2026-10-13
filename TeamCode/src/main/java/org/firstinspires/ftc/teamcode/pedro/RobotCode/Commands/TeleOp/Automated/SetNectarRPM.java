@@ -1,8 +1,9 @@
 package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Constants;
-import org.firstinspires.ftc.teamcode.RobotCode.PIDController;
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.ShooterSubsystem;
+
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Constants;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.PIDController;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.ShooterSubsystem;
 
 public class SetNectarRPM {
     private ShooterSubsystem shooterSubsystem;

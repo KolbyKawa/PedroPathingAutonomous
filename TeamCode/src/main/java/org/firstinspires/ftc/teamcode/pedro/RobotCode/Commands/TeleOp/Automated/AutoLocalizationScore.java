@@ -1,10 +1,11 @@
-package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated;//package org.firstinspires.ftc.teamcode.Commands.TeleOp.Automated;
+//package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Automated;//package org.firstinspires.ftc.teamcode.Commands.TeleOp.Automated;
 //
-//import org.firstinspires.ftc.teamcode.RobotCode.Constants;
-//import org.firstinspires.ftc.teamcode.Localization;
-//import org.firstinspires.ftc.teamcode.Subsystems.MecanumDriveSubsystem;
-//import org.firstinspires.ftc.teamcode.Subsystems.ShooterSubsystem;
-//import org.firstinspires.ftc.teamcode.Subsystems.StorageSubsystem;
+//
+//import org.firstinspires.ftc.teamcode.pedro.RobotCode.Constants;
+//import org.firstinspires.ftc.teamcode.pedro.RobotCode.Localization;
+//import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.MecanumDriveSubsystem;
+//import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.ShooterSubsystem;
+//import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.StorageSubsystem;
 //
 //public class AutoLocalizationScore {
 //    private ShooterSubsystem shooterSubsystem;

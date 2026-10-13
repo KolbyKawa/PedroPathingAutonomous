@@ -2,7 +2,8 @@ package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Manual;
 
 import com.qualcomm.robotcore.hardware.Gamepad;
 
-import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.MecanumDriveSubsystem;
+import org.firstinspires.ftc.teamcode.pedro.RobotCode.Subsystems.MecanumDriveSubsystem;
+
 
 public class BrakeCommand {
     private MecanumDriveSubsystem mecanumDriveSubsystem;
