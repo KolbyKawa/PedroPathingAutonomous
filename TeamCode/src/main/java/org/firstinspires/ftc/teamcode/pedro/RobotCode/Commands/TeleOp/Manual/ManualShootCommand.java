@@ -1,0 +1,52 @@
+package org.firstinspires.ftc.teamcode.pedro.RobotCode.Commands.TeleOp.Manual;
+
+import com.qualcomm.robotcore.hardware.Gamepad;
+
+import org.firstinspires.ftc.teamcode.RobotCode.Constants;
+import org.firstinspires.ftc.teamcode.RobotCode.PIDController;
+import org.firstinspires.ftc.teamcode.RobotCode.Subsystems.ShooterSubsystem;
+
+public class ManualShootCommand {
+    private ShooterSubsystem shooterSubsystem;
+    private Gamepad gamepad;
+    private PIDController nectarPID;
+    private PIDController pollenPID;
+    public ManualShootCommand(ShooterSubsystem shooterSubsystem, Gamepad gamepad) {
+        this.shooterSubsystem = shooterSubsystem;
+        this.gamepad = gamepad;
+        nectarPID = Constants.PayloadConstants.nectarPID;
+        pollenPID = Constants.PayloadConstants.pollenPID;
+    }
+    public void operate(double dt) {
+        if (gamepad.dpad_up && gamepad.right_trigger >= 0.25) {
+            if (shooterSubsystem.getNectarToggle()) {
+                shooterSubsystem.setNectarShooterPower(-0.9);
+            }
+            if (shooterSubsystem.getPollenToggle()) {
+                shooterSubsystem.setPollenShooterPower(-0.9);
+            }
+        }
+        else if (gamepad.dpad_up) {
+            if (shooterSubsystem.getNectarToggle()) {
+                nectarPID.createSetPoint(4000);
+                nectarPID.setProcessVariable(shooterSubsystem.getNectarShooterRPM());
+                shooterSubsystem.setNectarShooterPower(nectarPID.getOutput(dt));
+            }
+            if (shooterSubsystem.getPollenToggle()) {
+                pollenPID.createSetPoint(4000);
+                pollenPID.setProcessVariable(shooterSubsystem.getPollenShooterRPM());
+                shooterSubsystem.setPollenShooterPower(pollenPID.getOutput(dt));
+            }
+        }
+        else {
+            pollenPID.resetIntegral();
+            nectarPID.resetIntegral();
+            shooterSubsystem.setBothShooterPower(0);
+        }
+    }
+    public void shutdown() {
+        pollenPID.resetIntegral();
+        nectarPID.resetIntegral();
+        shooterSubsystem.shutdown();
+    }
+}
